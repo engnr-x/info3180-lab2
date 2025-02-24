@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<body class="text-bg-light">
+    <div class="profile">
+        <div class="happy-coder">
+            <img src="{{ url_for('static', filename='happy-coder.jpg')}}" alt="Profile Photo" class="profile-photo">
+        </div>
+        <div class="header">
+            <h2 class="full-name">{{name}}</h2>
+            <p class="username">@engnr_x</p>
+            <p class="location">Kingston, Jamaica</p>
+            <p class="date-joined">Joined: {{date_joined}} </p>
+        </div>
+        <div class="content">
+            <p class="bio">The gem cannot be polished without friction, nor man perfected without trials.</p>
+            <div class="stats">
+                <p>Posts: 7</p>
+                <p>Followers: 250</p>
+                <p>Following: 100</p>
+            </div>
+            <button class="follow-btn">Follow</button>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
